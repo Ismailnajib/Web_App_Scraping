@@ -9,7 +9,7 @@ Objective: To develop a user-friendly web app that allows users to input a URL, 
 ## Phase 1: Setup and Environment
 ### 1: Define Requirements:
 * Define the scraping needs: URL input, text extraction, NER.
-* Specify the output formats (CSV, PDF) and tools (Selenium,streamlit, groq, beautifulsoup4, pdfkit, pyppeteer, spaCy, pandas ...).
+* Specify the output formats (CSV, TXT) and tools (Selenium,streamlit, groq, beautifulsoup4, pyppeteer, spaCy, pandas ...).
 * The project begins with setting up a dedicated virtual environment and installing necessary dependencies like Streamlit, Selenium, and BeautifulSoup4.
 ### 2: Environment Setup:
 * Set up a Python vertual environment for the project.
