@@ -163,7 +163,9 @@ st.set_page_config(
 st.markdown( """ <style> .css-1d391kg { background-color: #264cee; /* Desired background color */ } </style> """, unsafe_allow_html=True)
 st.markdown( """ <style> .stApp { background: linear-gradient(0deg, rgb(250, 247, 240) 30%, rgba(176, 200, 255) 70%); } </style> """, unsafe_allow_html=True ) 
 st.markdown( """ <style> /* Hide header */ header { visibility: hidden; } /* Hide footer */ .stFooter { visibility: hidden; } </style> """, unsafe_allow_html=True )
-st.write("This is the main page.")
+st.title("Web App Scraping with LLM")
+st.subheader("By bridging web scraping and LLM capabilities, this app serves as a powerful tool for data-driven applications in today’s information-rich environment.")
+
 url = st.text_input("Enter a website URL :")
 
 if st.button("Scrape"):
@@ -189,16 +191,18 @@ if "dom_content" in st.session_state:
         st.download_button(
         label="Download txt",
         data=parsed_result,
-        file_name="parsed_content.txt",
+        file_name="data_texte.txt",
         mime="text/plain"
         )
         csv_data = convert_table_to_csv(parsed_result)
 
         # Add a download button for the CSV data
+        # Custom CSS for Download Button
+        
         st.download_button(
             label="Download CSV",
             data=csv_data,
-            file_name="premier_league_table.csv",
+            file_name="data_csv.csv",
             mime="csv"
         )
 
