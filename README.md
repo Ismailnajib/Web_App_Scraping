@@ -62,5 +62,5 @@ Objective: To develop a user-friendly web app that allows users to input a URL, 
 * Include setup instructions for others to install and run the app.
 ### 3: User Guide:
 * Provide a guide for input requirements (valid URL formats, entity types) and supported file formats.
-
+* this link for deployment : ==>  https://web-app-scraping.streamlit.app
 
