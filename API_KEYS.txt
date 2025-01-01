@@ -1,8 +1,1 @@
-# Configure the API key GIMINI
-api_key = "AIzaSyC1j6uvY3liep3RgBaXXsml6q9BSA3G-a4" 
-genai.configure(api_key=api_key)
-
-LA-9478297c18d341538820b0fce57f7e564887651359e141ac9deb430d39d52ce3
-
-qrop cloud API  :    
-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
+Go to Groq website  and create an API key 
