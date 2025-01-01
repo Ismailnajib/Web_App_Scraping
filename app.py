@@ -5,7 +5,6 @@ import os
 import csv
 import requests
 from groq import Groq
-import google.generativeai as genai
 from selenium.webdriver import ChromeOptions, Remote
 from dotenv import load_dotenv
 from selenium import webdriver
@@ -13,16 +12,6 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chromium.remote_connection import ChromiumRemoteConnection
 from bs4 import BeautifulSoup
-from langchain_core.prompts import ChatPromptTemplate
-from langchain.llms import BaseLLM
-from langchain.prompts import PromptTemplate
-
-# Configure the API key GIMINI
-# api_key = "AIzaSyC1j6uvY3liep3RgBaXXsml6q9BSA3G-a4" 
-# genai.configure(api_key=api_key)
-
-
-
 def scrape_website(website):
  
         chrome_driver_path = "./chromedriver.exe"
