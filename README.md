@@ -41,7 +41,7 @@ Objective: To develop a user-friendly web app that allows users to input a URL, 
 * The user inputs a prompt, such as a request for Named Entity Recognition (NER), which is then sent to Llama3 along with the cleaned web content. This prompt guides the model to analyze the content and extract the specific information the user needs, such as identifying names, organizations, or other key entities.
 * The refined content is passed to the Llama3 model via Groq's API. The model processes the content and extracts meaningful information based on specific prompts or questions.
 ## Phase 7:Data Export and Download Functionality
-•### 1:CSV Export:
+### 1: CSV Export:
 * Convert the structured data (DataFrame) to CSV format.
 * Create a Streamlit download button for the CSV file.
 ### 2: PDF Export:
