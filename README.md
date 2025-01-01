@@ -6,11 +6,11 @@ This is a free solution for web app scraping, allowing you to extract text from 
 
 ## Phase 1: Initial Setup
 ### 1.Define Requirements:
-○ Define the scraping needs: URL input, text extraction, NER.
-○ Specify the output formats (CSV, PDF) and tools (pyppeteer, spaCy, pandas, pdfkit).
+* Define the scraping needs: URL input, text extraction, NER.
+* Specify the output formats (CSV, PDF) and tools (pyppeteer, spaCy, pandas, pdfkit).
 ### 2.Environment Setup:
-○ Set up a Python environment for the project.
-○ Install dependencies: streamlit, pyppeteer, beautifulsoup4, spacy, pandas, pdfkit.
+* Set up a Python environment for the project.
+* Install dependencies: streamlit, pyppeteer, beautifulsoup4, spacy, pandas, pdfkit.
 ### 3.Download spaCy Model:
 ○ Download the spaCy model for Named Entity Recognition (NER).
 ○ Command: python -m spacy download en_core_web_sm.
