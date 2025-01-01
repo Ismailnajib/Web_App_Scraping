@@ -5,33 +5,26 @@ import os
 import csv
 import requests
 from groq import Groq
+from selenium.webdriver import ChromeOptions, Remote
+from dotenv import load_dotenv
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chromium.remote_connection import ChromiumRemoteConnection
 from bs4 import BeautifulSoup
 
-
 def scrape_website(website):
-    # Path to chromedriver (ensure chromedriver is available in your environment)
-    chrome_driver_path = "./chromedriver"  # or the absolute path
-    
-    # Configure ChromeOptions for headless mode
-    options = Options()
-    options.add_argument('--headless')  # Run in headless mode
-    options.add_argument('--no-sandbox')  # Necessary for some environments like Streamlit
-    options.add_argument('--disable-dev-shm-usage')  # For environments with limited shared memory
-
-    # Initialize the WebDriver with the specified options
-    driver = webdriver.Chrome(service=Service(chrome_driver_path), options=options)
-    
-    try:
-        driver.get(website)
-        print("Page loaded ...")
-        html = driver.page_source
-        return html
-    finally:
-        driver.quit()
+ 
+        chrome_driver_path = "./chromedriver.exe"
+        options = webdriver.ChromeOptions()
+        driver = webdriver.Chrome(service=Service(chrome_driver_path), options=options) 
+        try:
+            driver.get(website)
+            print("page loaded ...")
+            html= driver.page_source
+            return html
+        finally:
+            driver.quit()
 #############################################################################
 
 def extract_body_content(html_content):
