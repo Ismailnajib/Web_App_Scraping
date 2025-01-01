@@ -5,7 +5,6 @@ import os
 import csv
 import requests
 from groq import Groq
-from selenium.webdriver import ChromeOptions, Remote
 from dotenv import load_dotenv
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
