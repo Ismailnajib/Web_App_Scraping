@@ -2,6 +2,7 @@
 import streamlit as st
 import pandas as pd
 import os
+import re
 import csv
 import requests
 from groq import Groq
@@ -15,7 +16,7 @@ from bs4 import BeautifulSoup
 
 def scrape_website(website):
  
-        chrome_driver_path = "./chromedriver.exe"
+        chrome_driver_path = r"./chromedriver.exe"
         options = ChromeOptions()
         options.add_argument("--no-sandbox")  # Bypass OS-level sandbox
         options.add_argument("--disable-dev-shm-usage")  # Overcome limited resources issues
