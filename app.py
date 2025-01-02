@@ -22,7 +22,6 @@ def scrape_website(website):
         options.add_argument("--disable-dev-shm-usage")  # Overcome limited resources issues
         options.add_argument("--disable-gpu")  # Disable GPU acceleration
         options.add_argument("--remote-debugging-port=9222")  # Debugging port # Set a window size to avoid element not found issues
-        options.add_argument("--disable-dev-shm-usage")
         driver = webdriver.Chrome(service=Service(chrome_driver_path), options=options) 
         try:
             driver.get(website)
