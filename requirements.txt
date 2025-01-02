@@ -7,3 +7,6 @@ html5lib
 python-dotenv
 langchain
 pandas
+nest_asyncio
+asyncio
+playwright.async_api
