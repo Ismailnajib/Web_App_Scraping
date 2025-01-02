@@ -15,7 +15,7 @@ from selenium.webdriver.chromium.remote_connection import ChromiumRemoteConnecti
 from bs4 import BeautifulSoup
 
 def scrape_website(website):
-        chrome_driver_path = "chromedriver.exe"
+        chrome_driver_path = r"./chromedriver.exe"
         if os.path.exists(chromedriver_path):
             try:
                 # Run chmod command to make chromedriver executable
