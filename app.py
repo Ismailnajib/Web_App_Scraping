@@ -26,6 +26,7 @@ template = (
 
 # Function to scrape the website using Playwright (asynchronous)
 async def scrape_website(url):
+     playwright install
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)  # Launch browser
         page = await browser.new_page()
