@@ -10,4 +10,3 @@ pandas
 nest_asyncio
 asyncio
 playwright
-subprocess
