@@ -16,12 +16,12 @@ from bs4 import BeautifulSoup
 def scrape_website(website):
  
         chrome_driver_path = "./chromedriver.exe"
-        options = webdriver.ChromeOptions()
-        options.add_argument("--headless")  # Run in headless mode
-        options.add_argument("--no-sandbox")  # Bypass OS security model
-        options.add_argument("--disable-dev-shm-usage")  # Overcome limited resources problems
-        options.add_argument("--disable-gpu")  # Disable GPU (sometimes necessary)
-        options.add_argument("--window-size=1920x1080")  # Set a window size to avoid element not found issues
+        options = Options()
+        options.add_argument("--headless")  # Run without GUI
+        options.add_argument("--no-sandbox")  # Bypass OS-level sandbox
+        options.add_argument("--disable-dev-shm-usage")  # Overcome limited resources issues
+        options.add_argument("--disable-gpu")  # Disable GPU acceleration
+        options.add_argument("--remote-debugging-port=9222")  # Debugging port # Set a window size to avoid element not found issues
         driver = webdriver.Chrome(service=Service(chrome_driver_path), options=options) 
         try:
             driver.get(website)
