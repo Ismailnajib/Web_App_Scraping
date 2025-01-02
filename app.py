@@ -15,7 +15,16 @@ from selenium.webdriver.chromium.remote_connection import ChromiumRemoteConnecti
 from bs4 import BeautifulSoup
 
 def scrape_website(website):
-        chrome_driver_path = "./chromedriver.exe"
+        chrome_driver_path = "chromedriver.exe"
+        if os.path.exists(chromedriver_path):
+            try:
+                # Run chmod command to make chromedriver executable
+                subprocess.run(['chmod', '+x', chromedriver_path], check=True)
+                print(f"Permissions updated for {chromedriver_path}")
+            except subprocess.CalledProcessError as e:
+                print(f"Error running chmod: {e}")
+        else:
+            print(f"Chromedriver not found at {chromedriver_path}")
         options = Options()
         options.add_argument("--headless")  # Run without GUI
         options.add_argument("--no-sandbox")  # Bypass OS security model
