@@ -16,7 +16,7 @@ from bs4 import BeautifulSoup
 import subprocess
 
 def scrape_website(website):
-        chrome_driver_path = r"./chromedriver.exe"
+        chrome_driver_path = "./chromedriver.exe"
         if os.path.exists(chromedriver_path):
             try:
                 # Run chmod command to make chromedriver executable
