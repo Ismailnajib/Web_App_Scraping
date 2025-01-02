@@ -15,6 +15,7 @@ from selenium.webdriver.chromium.remote_connection import ChromiumRemoteConnecti
 from bs4 import BeautifulSoup
 
 def scrape_website(website):
+        chrome_driver_path = "./chromedriver.exe"
         options = Options()
         options.add_argument("--headless")  # Run without GUI
         options.add_argument("--no-sandbox")  # Bypass OS security model
