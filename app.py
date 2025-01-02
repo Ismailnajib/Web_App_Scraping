@@ -16,24 +16,9 @@ from bs4 import BeautifulSoup
 import subprocess
 
 def scrape_website(website):
+ 
         chrome_driver_path = "./chromedriver.exe"
-        if os.path.exists(chromedriver_path):
-            try:
-                # Run chmod command to make chromedriver executable
-                subprocess.run(['chmod', '+x', chrome_driver_path], check=True)
-                print(f"Permissions updated for {chrome_driver_path}")
-            except subprocess.CalledProcessError as e:
-                print(f"Error running chmod: {e}")
-        else:
-            print(f"Chromedriver not found at {chrome_driver_path}")
-        options = Options()
-        options.add_argument("--headless")  # Run without GUI
-        options.add_argument("--no-sandbox")  # Bypass OS security model
-        options.add_argument("--disable-dev-shm-usage")  # Prevent shared memory issues
-        options.add_argument("--disable-gpu")  # Disable GPU rendering
-        options.add_argument("--window-size=1920x1080")  # Set window size
-       
-    
+        options = webdriver.ChromeOptions()
         driver = webdriver.Chrome(service=Service(chrome_driver_path), options=options) 
         try:
             driver.get(website)
