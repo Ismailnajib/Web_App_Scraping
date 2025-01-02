@@ -9,4 +9,4 @@ langchain
 pandas
 nest_asyncio
 asyncio
-playwright.async_api
+playwright
