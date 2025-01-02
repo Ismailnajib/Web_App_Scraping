@@ -6,7 +6,7 @@ import os
 from groq import Groq
 from playwright.async_api import async_playwright
 from bs4 import BeautifulSoup
-
+import subprocess
 
 # Set the API key in the environment (for production, set it securely in your environment)
 os.environ["API_KEYQ"] = "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"
@@ -24,9 +24,19 @@ template = (
     "4. **Direct Data Only:** Your output should contain only the data that is explicitly requested, with no other text and try to organize the data as table as possible."
 )
 
+
+
+# Check if Playwright browsers are installed and install them if not
+try:
+    import playwright
+except ImportError:
+    subprocess.run(["pip", "install", "playwright"])
+
+# Install Playwright browsers
+subprocess.run(["python", "-m", "playwright", "install"])
 # Function to scrape the website using Playwright (asynchronous)
 async def scrape_website(url):
-     playwright install
+     
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)  # Launch browser
         page = await browser.new_page()
