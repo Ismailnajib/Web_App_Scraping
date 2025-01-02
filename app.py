@@ -16,7 +16,7 @@ from bs4 import BeautifulSoup
 def scrape_website(website):
  
         chrome_driver_path = "./chromedriver.exe"
-        options = Options()
+        options = ChromeOptions()
         options.add_argument("--no-sandbox")  # Bypass OS-level sandbox
         options.add_argument("--disable-dev-shm-usage")  # Overcome limited resources issues
         options.add_argument("--disable-gpu")  # Disable GPU acceleration
