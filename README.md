@@ -44,14 +44,14 @@ Objective: To develop a user-friendly web app that allows users to input a URL, 
 ### 1: CSV Export:
 * Convert the structured data (DataFrame) to CSV format.
 * Create a Streamlit download button for the CSV file.
-### 2: PDF Export:
-* Convert the data into HTML and then to PDF using pdfkit.
-* Ensure the PDF is downloadable with a Streamlit download button.
+### 2: TEXT Export:
+* Convert the data into Data Frame  and then to Text Format using .
+* Ensure the Text format  is downloadable with a Streamlit download button.
 ## Phase 8: Testing and Debugging
 ### 1: Test the App on Different URLs:
 * Test various website structures to ensure the scraper can handle different layouts.
 ### 2: Validate Output Formats:
-* Ensure CSV and PDF files download correctly and are formatted properly.
+* Ensure CSV and TEXT files download correctly and are formatted properly.
 ### 3: User Error Handling:
 * Test for invalid URLs, network errors, and unsupported formats.
 ## Phase 9: Deployment and Documentation : ==> not finished yet !!
