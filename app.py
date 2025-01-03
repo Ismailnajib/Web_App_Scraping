@@ -18,7 +18,7 @@ import subprocess
 def scrape_website(website):
  
         chrome_driver_path = "./chromedriver.exe"
-        options = webdriver.ChromeOptions()
+       
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized"); // open Browser in maximized mode
         options.addArguments("disable-infobars"); // disabling infobars
