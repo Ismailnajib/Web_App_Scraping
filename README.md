@@ -70,6 +70,6 @@ Objective: To develop a user-friendly web app that allows users to input a URL, 
 * Impact: This prevents the app from executing scraping tasks as expected.
 * We are trying to solve the problem using different libraries for scraping.
 * If the problem persists, our next step is to use a Docker container to see if it can resolve the issue.
-
+![Screenshot (4)](https://github.com/user-attachments/assets/2cedb44f-cec1-467c-9345-f1ace9216cda)
 
   
