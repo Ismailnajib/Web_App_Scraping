@@ -63,4 +63,5 @@ Objective: To develop a user-friendly web app that allows users to input a URL, 
 ### 3: User Guide:
 * Provide a guide for input requirements (valid URL formats, entity types) and supported file formats.
 * This is link for deployment : ==>  https://web-app-scraping.streamlit.app
+* Link Video demo :  https://github.com/Ismailnajib/Web_App_Scraping/blob/main/Video_demo.mp4
 
