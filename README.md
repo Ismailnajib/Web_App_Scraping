@@ -37,7 +37,7 @@ Objective: To develop a user-friendly web app that allows users to input a URL, 
 * Establish a connection to Llama3 through Groq's API, ensuring authentication using an API key. This setup prepares the app to send and receive data securely and efficiently.
 ### 2: Web Content Sent to Llama3:
 * The content scraped from the web is passed to Llama3 through the API call, along with a prompt. This enables the model to process the content and extract the information needed by the user, such as Named Entity Recognition (NER).
-###3: Prompt Sent to Llama3:
+### 3: Prompt Sent to Llama3:
 * The user inputs a prompt, such as a request for Named Entity Recognition (NER), which is then sent to Llama3 along with the cleaned web content. This prompt guides the model to analyze the content and extract the specific information the user needs, such as identifying names, organizations, or other key entities.
 * The refined content is passed to the Llama3 model via Groq's API. The model processes the content and extracts meaningful information based on specific prompts or questions.
 ## Phase 7:Data Export and Download Functionality
