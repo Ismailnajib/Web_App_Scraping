@@ -19,6 +19,13 @@ def scrape_website(website):
  
         chrome_driver_path = "./chromedriver.exe"
         options = webdriver.ChromeOptions()
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("start-maximized"); // open Browser in maximized mode
+        options.addArguments("disable-infobars"); // disabling infobars
+        options.addArguments("--disable-extensions"); // disabling extensions
+        options.addArguments("--disable-gpu"); // applicable to windows os only
+        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+        options.addArguments("--no-sandbox"); // Bypass OS security model
         driver = webdriver.Chrome(service=Service(chrome_driver_path), options=options) 
         try:
             driver.get(website)
