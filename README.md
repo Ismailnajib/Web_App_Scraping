@@ -14,7 +14,7 @@ Objective: To develop a user-friendly web app that allows users to input a URL, 
 ### 2: Environment Setup:
 * Set up a Python vertual environment for the project.
 * Install dependencies: streamlit, Selenium, pyppeteer, beautifulsoup4, spacy, pandas ... .
-* Download chrome driver for selemium tp solve problem of complex platfrom scraping.
+* Download chrome driver for selemium to solve problem of complex platfrom scraping.
 ## Phase 2: Interface Design Using Streamlit
 
 ### 1: Set Up Streamlit UI:   
