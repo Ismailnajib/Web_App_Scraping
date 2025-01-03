@@ -20,11 +20,11 @@ def scrape_website(website):
         chrome_driver_path = "./chromedriver.exe"
        
         options = ChromeOptions()
-        options.addArguments("disable-infobars"); // disabling infobars
-        options.addArguments("--disable-extensions"); // disabling extensions
-        options.addArguments("--disable-gpu"); // applicable to windows os only
-        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-        options.addArguments("--no-sandbox"); // Bypass OS security model
+        options.addArguments("disable-infobars")
+        options.addArguments("--disable-extensions")
+        options.addArguments("--disable-gpu")
+        options.addArguments("--disable-dev-shm-usage")
+        options.addArguments("--no-sandbox")
         driver = webdriver.Chrome(service=Service(chrome_driver_path), options=options) 
         try:
             driver.get(website)
