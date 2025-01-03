@@ -10,3 +10,6 @@ pandas
 nest_asyncio
 asyncio
 playwright
+wget
+unzip
+google-chrome-stable
