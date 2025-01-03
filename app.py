@@ -20,10 +20,6 @@ def scrape_website(website):
         chrome_driver_path = "./chromedriver.exe"
        
         options = Options()
-        options.addArguments("--disable-extensions")
-        options.addArguments("--disable-gpu")
-        options.addArguments("--disable-dev-shm-usage")
-        options.addArguments("--no-sandbox")
         driver = webdriver.Chrome(service=Service(chrome_driver_path), options=options) 
         try:
             driver.get(website)
