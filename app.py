@@ -17,7 +17,7 @@ import subprocess
 
 def scrape_website(website):
  
-        chrome_driver_path = "./chromedriver.exe"
+        chrome_driver_path = "./chromedriver"
        
         options = Options()
         driver = webdriver.Chrome(service=Service(chrome_driver_path), options=options) 
