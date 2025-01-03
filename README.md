@@ -66,5 +66,7 @@ Objective: To develop a user-friendly web app that allows users to input a URL, 
 * Link Video demo :  https://github.com/Ismailnajib/Web_App_Scraping/blob/main/Video_demo.mp4
 ## Phase 10: Actual Problems
 ### 1: Deployment Issues:
-* Chromedriver Problem: Description: The app relies on Chromedriver for web scraping tasks. However, during deployment, the Chromedriver cannot run directly on the Streamlit Cloud or similar server-side platforms.
+* Chromedriver Problem: Description: The app relies on Chromedriver for web scraping tasks. However, during deployment, the Chromedriver cannot run directly on the Github Cloud platforms.
 * Impact: This prevents the app from executing scraping tasks as expected.
+* We are trying to solve the problem using different libraries for scraping.
+* If the problem persists, our next step is to use a Docker container to see if it can resolve the issue.
