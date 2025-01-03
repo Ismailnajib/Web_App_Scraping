@@ -19,8 +19,7 @@ def scrape_website(website):
  
         chrome_driver_path = "./chromedriver.exe"
        
-        options = ChromeOptions();
-        options.addArguments("start-maximized"); // open Browser in maximized mode
+        options = ChromeOptions()
         options.addArguments("disable-infobars"); // disabling infobars
         options.addArguments("--disable-extensions"); // disabling extensions
         options.addArguments("--disable-gpu"); // applicable to windows os only
