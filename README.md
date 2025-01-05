@@ -73,4 +73,7 @@ Objective: To develop a user-friendly web app that allows users to input a URL, 
   
 ![Screenshot (4)](https://github.com/user-attachments/assets/2cedb44f-cec1-467c-9345-f1ace9216cda)
 
-  
+### Created by :
+* NAJIB ISMAIL
+* YOUSSEF BOUDOUAR
+* NAJIMDDIN MOHAMED
