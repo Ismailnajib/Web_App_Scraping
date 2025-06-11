@@ -75,5 +75,4 @@ Objective: To develop a user-friendly web app that allows users to input a URL, 
 
 ### Created by :
 * NAJIB ISMAIL
-* YOUSSEF BOUDOUAR
-* NAJIMDDIN MOHAMED
+
